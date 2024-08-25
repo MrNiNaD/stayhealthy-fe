@@ -35,12 +35,7 @@ const Doctors = () => {
           {doctors.length > 0 ? (
             <div className="doctors-card-container">
               {doctors.map((ele) => {
-                return (
-                  <DoctorCard
-                    ele={ele}
-                    key={ele._id}
-                  />
-                );
+                return <DoctorCard ele={ele} key={ele._id} />;
               })}
             </div>
           ) : (
